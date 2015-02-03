@@ -87,3 +87,44 @@ as .htaccess).
   ├─ wp-trackback.php
   └─ xmlrpc.php
   ```
+
+6. Start up WAMP/MAMP and point the Apache root to your wordpress installation.
+
+  For MAMP, click on 'Preferences', then go to the 'Web Server' tab and change
+  the Document Root folder to your wordpress folder you just set up.
+
+  For WAMP, there should be a similar process to point your Apache server to
+  your wordpress installation.
+
+  If you haven't already, click on Start Servers.
+
+7. Next, create a database user and a database specifically for your new
+  wordpress install.
+
+  With WAMP/MAMP, it should have come with `phpmyadmin`. On your MAMP homepage,
+  find the phpmyadmin link. For me it's
+  [http://localhost:8888/phpMyAdmin](http://localhost:8888/phpMyAdmin).
+
+  In phpmyadmin, click on the users tab, then click on the 'add user' link.
+
+  For ease-of-use, create a user with the same username and password. Host is
+  localhost. In the 'Database for user' section, check the checkbox next to
+  'Create database with same name and grant all privileges'. Then at the bottom
+  of the page, click on 'go'.
+
+8. Now we can setup wordpress. Go to the web root in your browser. For me, it's
+  [http://localhost:8888](http://localhost:8888). Go through, the installation
+  steps, and when prompted, enter in your username, password, and database name
+  from the previous step.
+
+9. Once you finish with the rest of the install, you should activate
+  the proper themes and plugins. Those will be listed here once this project
+  gets started.
+
+## Workflow
+
+TODO: We need to decide on a good git workflow. The most popular model, at least
+with open-source projects is distributed in nature, where everyone forks the
+main repository, and then submit pull requests for changed code. This is the
+safest, and probably most useful in terms of skills learned, but for those
+unfamiliar with git, it can take a while to get going.
